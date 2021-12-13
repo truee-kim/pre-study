@@ -1,0 +1,6 @@
+깃에 올린 레파지토리를 이용해 만들 수 있다.
+
+해당 레파지토리의 setting > github page 
+
+source > master branch를 하고 새고하면 주소가 뜬다.
+만약 주소를 들어갔는데 안된다면 주소 뒤에 /index.html을 붙여줘서 해보자
