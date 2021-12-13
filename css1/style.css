@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+/* a태그에 스타일주기 */
+a {
+    color : black;
+    text-decoration: none; /*밑줄 없애기*/
+}
+h1 {
+    font-size: 100px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 20px;
+}
+ul {
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+}
+
+#gr {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+#line {
+    border-left: 1px solid black;
+    padding: 20px;
+}
+
+@media(max-width:800px){
+    #gr {
+    display: block;
+     }
+     #line {
+    border-left: none;
+     }
+    h1 {
+        border-bottom: none;
+    }
+}
