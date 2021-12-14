@@ -8,7 +8,10 @@ ul, li, ol
 만약 li에 넘버링을 하고 싶다면 여러 개가 있을 경우 숫자를 다 칠 순 없다
 - ol(ordered list)로 li를 감싸주면 숫자를 입력하지 않아도 리스트에 숫자가 표시된다.
 
-
+a태그 href로 본문 내의 아이디로 찾아 갈 수 있다.
+ex) <div id="top">위 </div>
+      ... 
+      <a href="#top">top찾기</a>
 
 table의 태그
 table 테이블을 만든다

@@ -1,0 +1,130 @@
+<!-- 회원가입 창을 만들어보자 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .add1 {
+            width: 50px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 200px 800px;
+        }
+        .content>:nth-of-type(1) {
+            text-align: center;
+        }
+        span {
+            color: red;
+        }
+        div {
+            margin-top: 10px;
+        }
+        #btn {
+            text-align: center;
+        }
+        #container>:nth-of-type(1){
+            border-bottom: 3px solid rgb(114, 114, 114);
+        }
+    
+    </style>
+</head>
+<body>
+    <form>
+
+        <div id="container">
+            <div><h2>회원정보입력</h2></div>
+            <div class="content">
+                <div>
+                    <span>*</span>이 &nbsp;&nbsp;&nbsp;&nbsp; 름 :
+                </div>
+                <div>
+                    <input type="text" name="name" placeholder="이름을 입력하세요" >
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <span>*</span>아 이 디 :
+                </div>
+                <div>
+                    <input type="text" name="id"  >
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <span>*</span>비밀번호 :
+            </div>
+            <div>
+                <input type="password" name="pass" >
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <span>*</span>비밀번호확인 :
+            </div>
+            <div>
+                <input type="password" name="passcheck" >
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <span>*</span>생 &nbsp;&nbsp;&nbsp;&nbsp; 일 :
+            </div>
+            <div>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>  월 
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>  일
+                
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <span>*</span> 주 &nbsp;&nbsp;&nbsp;&nbsp; 소 :
+            </div>
+            <div id="addr">
+                <input type="text" name="add_1" class="add1"> -
+                <input type="text" name="add_2" class="add1">
+                <button>주소검색</button>
+                <div>
+                    <input type="text" name="add_3">
+                </div>
+                <div>
+                    <input type="text" name="add_4">
+                </div>
+            </div>
+        </div>
+        <!-- 이름 아이디 비밀번호 비밀번호 확인 생일/성별 우편번호 집주소 이메일 휴대폰 -->
+        <div id="btn">
+            <button type="submit">제출하기</button>
+            <button type="reset">초기화</button>
+        </div>
+    </div>
+</form>
+    
+
+</body>
+</html>

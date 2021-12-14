@@ -1,0 +1,90 @@
+<!-- 
+title 태그에 인물 이름
+h1 태그에 인물 이름
+img 태그에 인물 사진 (인터넷에 올라와 있는 이미지)
+p 태그에 간단한 설명 (b 태그와 i 태그 하나씩 포함시켜주세요.)
+이 인물과 연관 있는 사이트로의 링크 (a 태그) 한 개
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Yoo YoungJin</title>
+     <style>
+         body {
+             margin: 0;
+         }
+         #cont{
+             display: grid;
+             grid-template-columns: 0.5fr 1fr;
+             padding: 10px;
+             text-align: center;
+         }
+         #cont div{
+            margin: 20px;
+         }
+         #name {
+             padding: 50px;
+         }
+         /* #vote {
+             width: 600px;
+         } */
+         #vote {
+             display: flex;
+             justify-content: center;
+              align-items: center;
+         }
+         #vote div {
+             margin: 10px;
+         }
+         p {
+             padding: 50px;
+             border-top: 5px solid gray;
+         }
+
+     </style>
+ </head>
+ <body>
+     <div id="cont">
+         <div id="name">
+             <h1>유영진</h1>
+        </div>
+        <div>
+            <img src="https://img.sbs.co.kr/newimg/news/20180718/201206676_1280.jpg" width="30%">
+        </div>
+    </div>
+    <div>
+        <p>
+            M과 계약하던 날 이수만은 유영진에게 "곡이 더 있냐"고 물었고, 유영진은 군 시절 만든 곡들 중 하루에 10곡씩 준비해 이수만에게 들려줬다고 한다.<br>
+            그리하여 결국에는 SM과 계약에 성공하고, 마침내 1993년 8월 1집 데뷔 음반인 《그대의 향기》를 발매하게 된다.<br> 
+            [2] 이후 H.O.T. 1집 음반을 통해 프로듀서로서도 데뷔하   였다. 참고로 SM 엔터테인먼트와 계약 당시 이수만 대표와 종신 계약을 맺어 당시 업계에 화제가 되기도 하였다.
+        </p>
+    </div>
+    <div id="vote">
+        <form action="a.do" method="get">
+            <fieldset>
+                <legend> 유영진 아버지의 노래 중 가장 좋아하는 곡은 ?</legend>
+                <div>
+                    <input type="text" name="singer" placeholder="가수와 제목을 입력하세요" /> <br>
+                </div>
+                <div>
+                    <input type="checkbox" name="sing" value="forever"> 에스파 - 영원
+                    <input type="checkbox" name="sing" value="sticker"> nct127 - sticker
+                    <input type="checkbox" name="sing" value="beautiful"> SNSD - Beautiful girls
+                </div>
+                <div>
+                    아버지를 얼마나 존경하시나요? :
+                    <input type="range" min="0" max="100" step="10" >
+                </div>
+            </fieldset>
+            <button>투표하기</button>
+        </form>
+    </div>
+        
+    
+ </body>
+ </html>
