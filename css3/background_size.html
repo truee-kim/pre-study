@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>background-size</title>
+<style>
+    img {
+        margin-top: 10px; 
+    }
+    div{
+        width: 574px;
+        height: 800px;
+        background: url("../img/cherrydoll.jpeg") no-repeat;
+        border: 1px solid black;
+        width: 90%;
+        height: 200px;
+
+        background-size: contain;  /* 이미지가 div보다 작기때문에 이미지size로 */
+        background-size: cover; /* div가 이미지보다 크기때문에 div size로 */
+
+        
+    }
+
+</style>
+</head>
+<body>
+    <div></div>
+    <img src="../img/cherrydoll.jpeg" />
+</body>
+</html>

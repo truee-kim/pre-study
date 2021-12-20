@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>background-clip</title>
+<style>
+    div{
+        background: cornsilk;
+        border: 20px solid transparent;
+        width: 300px; height: 200px;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #clip1 { 
+        background: url("../img/happy.jpg") no-repeat;
+        background-clip: border-box; 
+    }
+
+    #clip2 {
+        background: url("../img/happy.jpg") no-repeat; 
+        background-clip: padding-box;
+    }
+
+    #clip3 { 
+        background: url("../img/happy.jpg") no-repeat;
+        background-clip: content-box;
+    }
+
+    #clip4 {
+        background: url("../img/happy.jpg") no-repeat;
+        background-clip: text;
+        -webkit-background-clip: text; 
+        /* -webkit-background-clip은 무슨 표현일까 webkit은 구글,사파리 브라우저에 적용하라는 의미이다*/
+        color: transparent;
+    }
+
+
+</style>
+</head>
+<body>
+    <div id="clip1"><h2>border-box</h2></div>
+    <div id="clip2"><h2>padding-box</h2></div>
+    <div id="clip3"><h2>content-box</h2></div>
+    <div id="clip4"><h2>text-box</h2></div>
+</body>
+</html>
