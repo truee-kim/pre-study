@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font family</title>
+    <style>
+        .font { font-family: 굴림체;}
+        .font { font-family: cursive;}
+        div > .font {
+            font-size: x-large;
+        }
+        #f {
+            font: 40px bold italic;
+        }
+        .variant{
+        font-variant: small-caps; /*크기는 소문자로 유지하면서 대문자로 바뀐다*/
+    }
+    </style>
+</head>
+<body>
+    <h2>글꼴 테스트</h2>
+    <p class="font">굴림체</p>
+    <div>
+        <p class="font">굴림체</p>
+    </div>
+    <p id="f">폰트 테스트</p>
+    <h2 class="variant">하이브(hive)</h2>
+
+</body>
+</html>

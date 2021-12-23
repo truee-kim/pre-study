@@ -32,3 +32,9 @@ background-size : 배경 이미지의 크기 지정 넓이가 줄어드는 비�
 background-size : 200px;
 background-size : 200px 150px;
 background-size : 50%;
+
+background-clip
+- border-box 보더를 꽉 채운다
+- padding-box 패딩까지 꽉 채운다
+- content-box 콘텐트를 꽉 채운다
+- text-box 
