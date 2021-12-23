@@ -35,3 +35,15 @@ ex 구글 폰트
 
 
 white-space : 요소가 공백 문자를 처리하는 법을 지정
+
+
+margin : 엘리먼트와 엘리먼트 사이의 간격
+ex) <h1> 마진1 </h1>  margin 50
+    <h2> 마진2 </h2>  margin 100
+    이 상황이라면 두 간격은 마진 150이 아닌 100이 된다.
+
+
+
+border : 테두리
+-border-style과 함께 사용해야하는 것들
+-border-width, border-color(style이 먼저 설정되어야 함)
