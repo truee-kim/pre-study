@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background: whitesmoke;
+        }
+        .card{
+            background: white;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+
+            height: 150px;
+            width: 400px;
+            word-wrap: break-word;
+
+        }
+        .card__thumb{
+            width: 25%;
+            margin-top: 5%; margin-left: 5%;
+        }
+
+        .card__body{
+
+            width: 60%;
+
+            margin-top: -100px;
+            margin-left: 150px;
+        }
+
+        .card__character{
+            margin-bottom: 10%;
+        }
+        .card__thumb__img {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+
+
+        }
+
+        .card:hover{
+            box-shadow: 0 0 10px 5px #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- 호버하면 box에 그림자가 생기게하기 -->
+    <div class="card">
+        <div class="card__thumb">
+            <img src="../img/happy.jpg" alt="주인공" class="card__thumb__img">
+        </div>
+        <div class="card__body">
+            <div class="card__character">주인공 - 진모리</div>
+            <div class="card__desc">전국, 전세계 고등학생 중 가장 쎈 녀석을 뽑는 대회가 열린다.</div>
+        </div>    
+    </div>
+    
+</body>
+</html>

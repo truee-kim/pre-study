@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> text-shadow </title>
+<meta charset="utf-8" />
+<style>
+    body{
+        background: #808080;
+    }
+    h1{
+        font-size: 80px;
+        color: white;
+        text-align: center;
+    }
+    .shadow1{
+        text-shadow: 1px 10px 20px #000;
+    }
+    .shadow2{
+        color: black;
+        text-shadow: 3px -3px 5px #ffffff;
+    }
+    .shadow3{
+        color: #000;
+        text-shadow: 0 0 4px #ccc,
+                     0 -5px 4px #ff3,
+                     2px -10px 6px #fd3,
+                     -2px -15px 11px #f80,
+                     2px -19px 18px #f20;
+    }
+    div{
+        border: 1px solid #284562;
+        width: 300px; height: 150px;
+        margin: 20px;
+        text-align: center;
+    }
+    .shadow4{
+        box-shadow:20px 10px 5px 5px #666;
+        box-shadow:5px 5px 5px 5px #666;
+    }
+    .shadow5{
+        box-shadow:10px 10px 50px -1px blue;
+    }
+
+</style>
+</head>
+
+<body>
+ <h1>불꽃코딩</h1>
+ <h1 class="shadow1">불꽃코딩</h1>
+ <h1 class="shadow2">불꽃코딩</h1>
+ <h1 class="shadow3">불꽃코딩</h1>
+
+
+ <div class="shadow4">box-shadow:<br />20px 10px 5px 5px #666;</div>
+ <div class="shadow5">box-shadow:<br />10px 10px 50px -1px blue;</div>
+</body>
+</html> 
