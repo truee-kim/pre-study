@@ -1,0 +1,27 @@
+<!-- 
+    position 엘리먼트 위치 지정하기
+    - static, relative, absolute, fixed 가 있다
+    - static : 모든 태그들은 처음 static 상태. 인라인태그면 왼쪽에서 오른쪽으로
+              블록태그면 위에서 아래로 쌓인다
+    - relative : right , left , top, bottom 속성을 사용해 위치조절한다. z-index 사용가능
+    - absolute : 부모에 포지션이 없다면 body가 기준이된다. 오른쪽으로 정렬 
+                부모에 relative, absolute, fixed가 있다면 부모태그를 기준으로 오른쪽으로 정렬한다
+    - fixed :  스크롤을 내려도 고정되어 있다.
+ -->
+
+ <html>
+  <head>
+  <title> position </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="position.css">
+  </head>
+  <body>
+      <h1>위</h1>
+      <div class="parent">
+            <div class="pos1">1</div>
+            <div class="pos2">2</div>
+            <div class="pos3">3</div>
+      </div>
+      <h1>아래</h1>
+  </body>
+  </html>
