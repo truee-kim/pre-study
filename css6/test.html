@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            
+        }
+
+        .menu {
+            background-color: rgb(180, 180, 180);
+            margin-right: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            color: blue;
+            display: grid;
+            grid-template-rows: 50px 55px 50px;
+            line-height: 50px;
+           
+        }
+
+        .menu div:nth-of-type(2) {
+        border-top: 5px solid white;
+        }
+
+        .show_menu {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .hide_menu {
+            display: none;
+        }
+
+        .show_menu:hover .hide_menu{
+            display: block;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="menu">
+            <div class="show_menu">GREETING</div>
+            <div class="hide_menu">인삿말</div>
+            <div class="hide_menu">주변풍경</div>
+        </div>
+        <div class="menu">
+            <div class="show_menu">ROOMS</div>
+            <div class="hide_menu">은하수</div>
+            <div class="hide_menu">별똥별</div>
+        </div>
+        <div class="menu">
+            <div class="show_menu">SPECIAL</div>
+            <div class="hide_menu">스파즐기기</div>
+            <div class="hide_menu">바베큐</div>
+        </div>
+
+    </div>
+</body>
+</html>

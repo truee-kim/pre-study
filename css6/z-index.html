@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        margin: 0; padding: 0;
+        width: 100px;
+        height: 100px;
+        font-size: 100px;
+        text-align: end;
+        line-height: 100px;
+
+        position: absolute;
+        top: 210px;
+        left: 210px;
+        }
+        #layer1 {
+        background-color: #882e2e;
+        z-index: 4;
+        }
+        #layer2 {
+        background-color: #3dd8d0;
+        width: 140px;
+        height: 140px;
+        z-index: 3;
+        }
+        #layer3 {
+        background-color: #f88f0f;
+        width: 180px;
+        height: 180px;
+        z-index: 2;
+        }
+        #layer4 {
+        background-color: #1d887a;
+        width: 220px;
+        height: 220px;
+        z-index: 1;/*앞뒤*/
+
+        }
+        #layer5 {
+        background-color: #8b33f0;
+        width: 260px;
+        height: 260px;
+        }
+    </style>
+</head>
+<body>
+    <h2>z-index</h2>
+    <div id="layer1">1</div>
+    <div id="layer2">2</div>
+    <div id="layer3">3</div>
+    <div id="layer4">4</div>
+    <div id="layer5">5</div>
+</body>
+</html>
