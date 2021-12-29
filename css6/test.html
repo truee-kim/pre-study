@@ -6,38 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            vertical-align: middle;
+        }
         #container {
             display: grid;
             grid-template-columns: 200px 200px 200px;
+            position: absolute;
+            left: 35%;
             
         }
 
         .menu {
-            background-color: rgb(180, 180, 180);
+            
             margin-right: 20px;
             font-size: 25px;
             font-weight: bold;
             color: blue;
             display: grid;
-            grid-template-rows: 50px 55px 50px;
-            line-height: 50px;
+            grid-template-rows: 50px 52px 50px;
+            line-height: 40px;
            
         }
 
         .menu div:nth-of-type(2) {
-        border-top: 5px solid white;
+        border-top: 2px solid white;
         }
-
+        /* .menu div:nth-of-type(2) .menu div:nth-of-type(3) {
+            display: none;
+        } */
         .show_menu {
             text-align: center;
             margin-bottom: 5px;
+            background-color: rgb(180, 180, 180);
+        }
+        .show_menu:hover {
+            background-color: rgb(123, 176, 255);
+            color: white;
         }
 
         .hide_menu {
             display: none;
+            background-color: rgb(180, 180, 180);
+        }
+        .hide_menu:hover {
+            background-color: rgb(109, 109, 109);
+            color: white;
         }
 
-        .show_menu:hover .hide_menu{
+        .menu:hover .hide_menu{
             display: block;
 
         }
