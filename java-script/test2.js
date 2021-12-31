@@ -45,7 +45,7 @@ var sentence = "Where did Jane get the dolphin from, John?";
 
 let sentenceOf = sentence.indexOf("dolphin") // dolphin 시작점
 // let num = word.indexOf('n');
-console.log("num은 "+ num);
+//console.log("num은 "+ num);
 
 var indexOfD = sentenceOf; // SOMETHING 부분에 dolphin의 d의 위치를 찾는 코드를 작성해보세요.
 var indexOfN = sentenceOf + num; // SOMETHING_ELSE 부분에 dolphin의 n의 위치를 찾는 코드를 작성해보세요.
