@@ -18,16 +18,36 @@ seoul = ["Jane", "Kim"];
 
 let sMiddle = document.getElementById("sMiddle");
 let s = 'abcdefgh';
-var answer = '';
-function solution(s) {
+let sanswer = '';
+function stringSolution(s) {
     if(s.length % 2 == 0) {
-        answer = s.charAt(s.length / 2) + s.charAt (s.length / 2 + 1);
+        sanswer = s.charAt(s.length / 2) + s.charAt (s.length / 2 + 1);
+        console.log(sanswer);
     } else {
-        answer = s.charAt(s.length / 2);
+        sanswer = s.charAt(s.length / 2);
+        console.log(sanswer);
     }
-    return sMiddle.innerHTML = answer;
+    return sanswer;
+    console.log(sanswer);
 }
-solution(s);
+sMiddle.innerHTML += stringSolution(s);
 
 
-//수박수박수박수박
+//수박수박수박수박  수 + 박 for 돌면서,,, n반큼 n이 3이면 수박수
+let subak = document.getElementById("subak");
+let su = '수';
+let bak = '박';
+let n = 4;
+
+function solution(n) {
+    for(let i = 1; i <= n; i ++){
+        if(i % 2 == 0) {
+            answer += bak;
+        } else {
+            answer += su;
+        }
+    }
+    return answer;
+}
+
+subak.innerHTML += solution(n);
