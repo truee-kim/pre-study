@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .num {
+            display: grid;
+            grid-template-columns: 400px 45px;
+            margin-bottom: 20px;
+            position: relative;
+            left: 38%;
+            top: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>UP & DOWN GAME</h1>
+    <div class="num">
+        <div>내가 생각한 숫자는?<input type="text" id="myNum"></div>
+        <button id="myCheck">확인</button>
+    </div>
+    <div class="num">
+        <div>당신이 생각한 숫자는?<input type="text" id="yourNum"></div>
+        <button id="yourCheck">확인</button>
+    </div>
+    <div class="num">
+        <div>result : </div>
+        <div id="result"></div>
+    </div> 
+    
+    <script type="text/javascript" src="test5.js"></script>
+</body>
+</html>
